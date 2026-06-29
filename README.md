@@ -1,16 +1,35 @@
-# React + Vite
+# Reddit Client App 📱🤖
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+ეს არის Reddit-ის გამარტივებული ვერსია (Client Application), რომელიც აგებულია **React**-ისა და **Redux Toolkit**-ის ბაზაზე. აპლიკაცია ინტეგრირდება Reddit-ის ოფიციალურ API-სთან, რაც მომხმარებელს საშუალებას აძლევს დაათვალიეროს პოპულარული პოსტები, მოძებნოს სასურველი ინფორმაცია და წაიკითხოს კომენტარები.
 
-Currently, two official plugins are available:
+პროექტის ცოცხალი ვერსია (Live Demo): [ჩასვი შენი დეპლოის ბმული, მაგ. https://your-reddit-app.netlify.app]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎨 Wireframes (ინტერფეისის ჩანახატები)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> [აქ ჩასვი შენი Figma-ს ვიზუალი ან სკრინშოტი, მაგალითად: `![Wireframe](./assets/wireframe.png)`]
+*აპლიკაციის დიზაინი სრულად ადაპტირებულია როგორც დესკტოპისთვის, ასევე მობილური მოწყობილობებისთვის (Mobile-First approach).*
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ გამოყენებული ტექნოლოგიები (Technologies Used)
+
+*   **Frontend:** React (Hooks, Functional Components)
+*   **State Management:** Redux Toolkit (Slices, Async Thunks)
+*   **Routing / View:** React Router (ან Component-based Modal View)
+*   **Styling & Animations:** CSS Modules / Styled Components / Framer Motion
+*   **Testing:** Jest & React Testing Library (ან Enzyme)
+*   **API:** Reddit JSON API
+*   **Performance Optimization:** Lighthouse Audit (90+ ქულა SEO, Accessibility და Best Practices კატეგორიებში)
+
+---
+
+## ✨ ფუნქციები (Features)
+
+*   **საწყისი ხედი (Initial View):** აპლიკაციაში შესვლისას მომხმარებელი ავტომატურად ხედავს პოპულარულ (Trending) პოსტებს.
+*   **ძებნა (Search):** საძიებო ველის მეშვეობით მონაცემების დინამიური გაფილტვრა საკვანძო სიტყვების მიხედვით.
+*   **კატეგორიები (Subreddits Filter):** პოსტების გაფილტვრა წინასწარ განსაზღვრული კატეგორიების (მაგ. r/gaming, r/reactjs, r/movies) მიხედვით.
+*   **დეტალური ხედი (Detailed View):** პოსტზე დაწკაპუნებისას იხსნება მოდალური ფანჯარა ან ახალი გვერდი, სადაც ჩანს პოსტის სრული აღწერა და მომხმარებლების კომენტარები.
+*   **შეცდომების მართვა (Error Handling):** აპლიკაციას აქვს Error State — ინტერნეტის გათიშვის ან API-ს ხარვეზის შემთხვევაში, მომხმარებელს ეძლევა შეცდომიდან გამოსვლისა და გვერდის გადატვირთვის შესაძლებლობა.
+*   **ანიმაციები:** ინტერფეისი გამდიდრებულია ფლუიდური ტრანზიციებით უკეთესი User Experience-ისთვის.
